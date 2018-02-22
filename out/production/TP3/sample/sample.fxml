@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <VBox prefHeight="400.0" prefWidth="109.0">
+            <children>
+                <RadioButton fx:id="selectMove" ellipsisString="" mnemonicParsing="false" text="Select/Move" />
+                <Separator orientation="VERTICAL" prefHeight="5.0" />
+                <RadioButton fx:id="ellipse" mnemonicParsing="false" text="Ellipse" />
+                <Separator orientation="VERTICAL" prefHeight="5.0" />
+                <RadioButton fx:id="rectangle" mnemonicParsing="false" text="Rectangle" />
+                <Separator orientation="VERTICAL" prefHeight="5.0" />
+                <RadioButton fx:id="line" mnemonicParsing="false" text="Line" />
+                <Separator orientation="VERTICAL" prefHeight="30.0" />
+                <ColorPicker fx:id="pickColor" />
+                <Separator orientation="VERTICAL" prefHeight="30.0" />
+                <Button fx:id="delete" mnemonicParsing="false" prefHeight="35.0" prefWidth="100.0" text="Delete" />
+                <Separator orientation="VERTICAL" prefHeight="10.0" />
+                <Button fx:id="clone" mnemonicParsing="false" prefHeight="35.0" prefWidth="101.0" text="Clone" />
+            </children>
+        </VBox>
+        <Canvas fx:id="canvas" height="401.0" width="489.0" />
+    </children>
+</HBox>
